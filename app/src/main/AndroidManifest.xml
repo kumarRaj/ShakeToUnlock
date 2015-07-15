@@ -7,8 +7,9 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
-
-        <uses-feature android:name="android.hardware.sensor.accelerometer" android:required="true" />
+        <uses-feature
+            android:name="android.hardware.sensor.accelerometer"
+            android:required="true" />
 
         <activity
             android:name=".MotionSensor"
@@ -19,6 +20,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service
+            android:name=".MainService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
     </application>
 
 </manifest>

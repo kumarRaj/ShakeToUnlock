@@ -16,7 +16,7 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 
-public class MotionSensor extends Activity{
+public class MotionSensor   extends Activity{
 
     private SensorManager mSensorManager;
     private Sensor mAccelerometer;
